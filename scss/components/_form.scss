@@ -1,0 +1,110 @@
+
+.form {
+    display: flex;
+    flex-direction: column;
+    &__input {
+        max-width: 436px;
+        padding: 24px 20px;
+        margin-bottom: 30px;
+        background-color: transparent;
+        border: 1px solid #171616;
+
+    }
+    &__input--none {
+        display: none;
+    }
+    &__input--none:checked + &__checkbox-elem::before {
+        opacity: 1;
+    }
+    &__textarea {
+        max-width: 436px;
+        min-height: 167px;
+        margin-bottom: 39px;
+        padding: 24px 20px;
+        border: 1px solid #171616;
+        background-color: transparent;
+    }
+    &__checkbox {
+        display: flex;
+        margin-bottom: 30px;
+
+    }
+    &__checkbox-elem {
+        position: relative;
+        min-width: 20px;
+        margin-right: 21px;
+        height: 20px;
+        border: 1px solid #B0A8A8;
+        cursor: pointer;
+        &::before {
+            content: "";
+    
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 20px;
+            height: 20px;
+            
+            
+            background-image: url('./images/png/ok.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            transition-duration: .5s;
+            opacity: 0;
+        }
+    }
+    &__checkbox-text {
+        max-width: 385px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 137%;
+        /* or 19px */
+
+        letter-spacing: 0.02em;
+
+        color: #000000;
+        a {
+            text-decoration-line: underline;
+        }
+    }
+    &__download {
+        position: relative;
+        display: block;
+        max-width: 436px;
+        padding: 24px 20px;
+        margin-bottom: 30px;
+        background-color: transparent;
+        border: 1px solid #171616;
+        cursor: pointer;
+        &::before {
+            content: "Ваше резюме";
+    
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 137%;
+            /* identical to box height, or 22px */
+            
+            letter-spacing: 0.02em;
+            
+            color: #777070;
+        }
+        &::after {
+            content: "";
+    
+            position: absolute;
+            top: 22px;
+            right: 29px;
+
+            display: block;
+            width: 24px;
+            height: 24px;
+    
+            background-image: url('./images/svg/donwload.svg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+    &__btn {
+
+    }
+}

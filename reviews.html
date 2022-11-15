@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отзывы</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/um-icon-style.css">
+     <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header__wrap">
+
+            <button class="menu-btn header__menu-btn">
+                <span></span>
+                <span></span>
+            </button>
+
+
+            <a class="logo header__logo" href="index.html">
+                <img src="images/svg/logo.svg" alt="лого">
+            </a>
+
+            <nav class="menu header__menu">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a class="menu__link menu__link-list" href="#">Компания<i class="icon-arrow-bootom"></i></a>
+                        <ul class="menu__list-2">
+                            <li>
+                                <a class="menu__link" href="about.html">О Нас</a>
+                            </li>
+                            <li>
+                                <a class="menu__link" href="publications.html">Публикации</a>
+                            </li>
+                            <li>
+                                <a class="menu__link" href="reviews.html">Отзывы</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu__item"><a class="menu__link" href="services.html">Услуги</a></li>
+                    <li class="menu__item"><a class="menu__link" href="projects.html">Проекты</a></li>
+                    <li class="menu__item"><a class="menu__link" href="calulations.html">Инструменты</a></li>
+                    <li class="menu__item"><a class="menu__link" href="career.html">Карьера</a></li>
+                    <li class="menu__item"><a class="menu__link" href="contacts.html">Контакты</a></li>
+                </ul>
+                <ul class="menu__contact">
+                     
+                    <li><a href="mailto:info@sudo.team">info@sudo.team</a></li>
+                </ul>
+            </nav>
+            
+            <button class="header__search-btn search-btn">
+                <i class="icon-search"></i>
+            </button>
+
+            <div class="header__lang lang">
+                <button class="lang__btn">RU<i class="icon-arrow-bootom"></i></button>
+                <ul class="lang__list">
+                    <li><button disabled>EN</button></li>
+                </ul>
+            </div>
+
+            <div class="header__search search">
+                <button class="search__close">
+                    <i class="icon-close"></i>
+                </button>
+                <p class="search__text">Поиск...</p>
+                <label class="search__label">
+                    <input class="search__input" type="text" placeholder="Введите названия">
+                    <button class="search__btn">
+                        <i class="icon-enter"></i>
+                    </button>
+                </label>
+            </div>
+        </div>
+    </header>
+
+    <main class="pt-50">
+        
+        <section class="reviews m-auto">
+            <div class="container mb-dest-140 ">
+                <div class="block-3-7 career__block">
+                    <div class="h-337 title-default-m">
+                        <h2 class="title-h2 mb-28">Отзывы</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <div class="block-3-7 jc-star mb-28 flex-direction-column-table flex-direction-row-dest align-items-center-mob align-items-start-dest">
+                <div>
+                    <h3 class="title-h3 mb-28">ФГУП ВНИИ им. Д.И. Менделеева</h3>
+                </div>
+                <div>
+                    <div class="flex-mob justify-content-end-dest">
+                        <picture>
+                            <source srcset="./images/jpg/reviews.png" media="(min-width: 900px)">
+                            <img src="./images/jpg/reviews.png" alt="фото">
+                        </picture>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="contacts__block-form mb-140">
+            <div class="container block">
+                <div class="mb-63">
+                    <h3 class="title-h3 mb-28">Хотите предложить сотрудничество или заказать услугу?</h3>
+                    <p class="contacts__text">Заполните форму и наши специалисты свяжутся с вами для обсуждения деталей</p>
+                </div>
+                <div>
+                    <form class="form" action="#">
+                        <input class="form__input" type="text" placeholder="Контактное лицо">
+                        <input class="form__input" type="text" placeholder="Телефон">
+                        <input class="form__input" type="text" placeholder="Email">
+                        <textarea class="form__textarea" placeholder="Описание проекта"></textarea>
+                        <label class="form__checkbox">
+                            <input class="form__input--none" type="checkbox">
+                            <span class="form__checkbox-elem"></span>
+                            <span class="form__checkbox-text">
+                                Нажимая кнопку Отправить, я даю согласие на обработку моих персональных данных и соглашаюсь с <a href="#">Политикой конфиденциальности</a> 
+                            </span>
+                        </label>
+                        <button type="button" class="form__btn btn">
+                            <span>Отправить</span>
+                            <i class="icon-enter"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+        <div class="footer__wrap">
+            <div class="footer__block">
+                <a class="logo footer__logo" href="#">
+                    <img src="images/svg/logo.svg" alt="лого">
+                </a>
+    
+                <ul class="footer__nav">
+                    <li><a href="about.html">Компания</a></li>
+                    <li><a href="services.html">Услуги</a></li>
+                    <li><a href="projects.html">Проекты</a></li>
+                </ul>
+    
+                <ul class="footer__nav">
+                    <li><a href="calulations.html">Инструменты</a></li>
+                    <li><a href="career.html#">Карьера</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+    
+                <ul class="footer__info">
+                    <li>Информация</li>
+                    <li><a href="agreement.html">Политика конфиденциальности</a></li>
+                    <li><a href="#">Политика использования Cookies</a></li>
+                </ul>
+    
+                <ul class="footer__contact">
+                    <li><a href="mailto:info@sudo.team">info@sudo.team</a></li>
+                </ul>
+            </div>
+            <p class="footer__copyright">© 2022, ООО Судо. Все права сайта защищены</p>
+        </div>
+
+    </footer>
+    <script src="js/app.js"></script>
+</body>
+</html>

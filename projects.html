@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Реализованные проекты</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/um-icon-style.css">
+     <link rel="stylesheet" href="main.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="header__wrap">
+
+            <button class="menu-btn header__menu-btn">
+                <span></span>
+                <span></span>
+            </button>
+
+
+            <a class="logo header__logo" href="index.html">
+                <img src="images/svg/logo.svg" alt="лого">
+            </a>
+
+            <nav class="menu header__menu">
+                <ul class="menu__list">
+                    <li class="menu__item">
+                        <a class="menu__link menu__link-list" href="#">Компания<i class="icon-arrow-bootom"></i></a>
+                        <ul class="menu__list-2">
+                            <li>
+                                <a class="menu__link" href="about.html">О Нас</a>
+                            </li>
+                            <li>
+                                <a class="menu__link" href="publications.html">Публикации</a>
+                            </li>
+                            <li>
+                                <a class="menu__link" href="reviews.html">Отзывы</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu__item"><a class="menu__link" href="services.html">Услуги</a></li>
+                    <li class="menu__item"><a class="menu__link" href="projects.html">Проекты</a></li>
+                    <li class="menu__item"><a class="menu__link" href="calulations.html">Инструменты</a></li>
+                    <li class="menu__item"><a class="menu__link" href="career.html">Карьера</a></li>
+                    <li class="menu__item"><a class="menu__link" href="contacts.html">Контакты</a></li>
+                </ul>
+                <ul class="menu__contact">
+                     
+                    <li><a href="mailto:info@sudo.team">info@sudo.team</a></li>
+                </ul>
+            </nav>
+            
+            <button class="header__search-btn search-btn">
+                <i class="icon-search"></i>
+            </button>
+
+            <div class="header__lang lang">
+                <button class="lang__btn">RU<i class="icon-arrow-bootom"></i></button>
+                <ul class="lang__list">
+                    <li><button disabled>EN</button></li>
+                </ul>
+            </div>
+
+            <div class="header__search search">
+                <button class="search__close">
+                    <i class="icon-close"></i>
+                </button>
+                <p class="search__text">Поиск...</p>
+                <label class="search__label">
+                    <input class="search__input" type="text" placeholder="Введите названия">
+                    <button class="search__btn">
+                        <i class="icon-enter"></i>
+                    </button>
+                </label>
+            </div>
+        </div>
+    </header>
+
+    <main class="projects pt-50">
+
+        <section class="projects__block-1">
+            <div class="container">
+                <h2 class="projects__block-1--title mt-dest-110">Реализованные проекты</h2>
+                <p class="projects__block-1--text-1">Среди наших проектов – большое количество разработок сложных вычислительных программных решений в различных областях деятельности.</p>
+                <p class="projects__block-1--text-2">*Как правило, проекты были подкреплены NDA, поэтому мы можем предоставить только общее описание реализованных проектов.</p>
+            </div>
+        </section>
+
+        <section class="projects__block-2">
+            <div class="container">
+                <ul class="projects__sort">
+                    <li class="projects__sort-item"><button class="projects__sort-btn projects__sort-btn--active" id="btn-one" type="button">Все</button></li>
+                    <li class="projects__sort-item"><button class="projects__sort-btn" type="button" id="btn-two">Инженерные</button></li>
+                    <li class="projects__sort-item"><button class="projects__sort-btn" type="button" id="btn-three">Научные</button></li>
+                </ul>
+            </div>
+            <div class="projects__container container">
+                <div class="projects-card block-1 projects-card--eng">
+                    <h3 class="projects-card__title">Системы автоматического построения маршрутов и трасс</h3>
+                    <div class="projects-card__info">
+                        <p>Создание любого продукта начинается с идеи. Наша опытная команда поможет Вам на каждом этапе создания продукта. Основываясь на Ваших пожеланиях, мы поможем сформулировать идею, предложим интересные решения, вместе сформируем техническое задание и предоставим Вам готовый проект</p>
+                    </div>
+                </div>
+                <div class="projects-card block-2 projects-card--sci">
+                    <h3 class="projects-card__title">Системы математических и физических расчётов, как на CPU, так и на GPU</h3>
+                    <div class="projects-card__info">
+                        <p>Разработка программных решений для нужд учёных. Онлайн сервисы анализа и обработки данных магнитных свойств ферримагнитных материалов. Онлайн и оффлайн сервисы расчёта сложных математических алгоритмов. Поддержка различных форматов данных, расширенный набор пред-процессинговых и аналитических функций, высокая скорость обработки данных.</p>
+                    </div>
+                </div>
+                <div class="projects-card block-3 projects-card--eng projects-card--sci">
+                    <h3 class="projects-card__title">Системы автоматизации измерительного оборудования</h3>
+                    <div class="projects-card__info">
+                        <p>Разработка ПО для управления и контроля высокоточным измерительным оборудованием. Разработка интерфейсов коммуникации, создание протоколов передачи данных и обработки сигналов с высокими требованиями к надёжности и стабильности системы.</p>
+                    </div>
+                </div>
+                <div class="projects-card block-4 projects-card--sci">
+                    <h3 class="projects-card__title">Системы обработки изображений с использованием технологий компьютерного зрения и машинного обучения</h3>
+                    <div class="projects-card__info">
+                        <p>Разработка систем обработки и анализа изображений со сканирующих электронных микроскопов (SEM). Высокая точность и скорость обработки с использованием технологий компьютерного зрения и машинного обучения. Широкий набор функций предварительной обработки данных, система верификации данных, инструменты для анализа результатов, формирование детальных отчётов.</p>
+                    </div>
+                </div>
+                <div class="projects-card block-5 projects-card--eng projects-card--sci">
+                    <h3 class="projects-card__title">Разработка алгоритмов для высокопроизводительных вычислительных систем</h3>
+                    <div class="projects-card__info">
+                        <p>Создание серверных и кластерных решений для распределённых вычислений. Решение задач, требующих расчёта большого количества данных в короткий промежуток времени</p>
+                    </div>
+                </div>
+                <div class="projects-card block-6 projects-card--eng projects-card--sci">
+                    <h3 class="projects-card__title">Перенос вычислений на GPU</h3>
+                    <div class="projects-card__info">
+                        <p>Разработка и оптимизация алгоритмов для решения задач любой степени сложности. Ускорение процессов вычислений путём переноса расчётов на GPU до 400 раз.</p>
+                    </div>
+                </div>
+                <div class="projects-card block-7 projects-card--eng">
+                    <h3 class="projects-card__title">Разработка сайтов и приложений разного уровня сложности</h3>
+                    <div class="projects-card__info">
+                        <p>Создание и размещение сайтов и приложений для основных мобильных платформ различной степени сложности с использованием передовых решений, от интернет магазинов до 3D игр.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects__block-3">
+            <div class="projects__block-3--block container">
+                <div class="projects__block-3--block-1">
+                    <h3>Этапы внедрения программного продукта</h3>
+                </div>
+                <div class="projects__block-3--block-2">
+                    <p class="projects__block-3--text">
+                        Передача заказчику готового продукта происходит в удобном для вас формате. Мы можем передать вам сервис, уже готовый к использованию (при этом сервис размещается на нашем сервере), и оказывать техническую поддержку, либо отправить вам код в виде установочного файла - вам нужно будет только установить программу и запустить её на своём устройстве. Мы приобрели лицензию Microsoft, поэтому наши разработки безупречно устанавливаются на Windows и не воспринимаются как вредоносное ПО.
+                    </p>
+                    <ul class="projects__block-3--list">
+                        <li class="projects__block-3--item">
+                            <div>01/05</div>
+                            <p>Поступает предложение о работе</p>
+                        </li>
+                        <li class="projects__block-3--item">
+                            <div>02/05</div>
+                            <p>Составляется обобщённое описание проекта, на основе которого мы рассчитываем трудозатраты, необходимые для реализации проекта
+                            </p>
+                        </li>
+                        <li class="projects__block-3--item">
+                            <div>03/05</div>
+                            <p>Создаётся предварительное ТЗ и рассчитывается и согласовывается ориентировочная стоимость.</p>
+                        </li>
+                        <li class="projects__block-3--item">
+                            <div>04/05</div>
+                            <p>Работа, как правило, состоит из нескольких этапов.</p>
+                        </li>
+                        <li class="projects__block-3--item">
+                            <div>05/05</div>
+                            <p>По окончании этапа разработки мы переходим к тестированию.</p>
+                        </li>
+                        <li class="projects__block-3--item">
+                            <div>06/05</div>
+                            <p>По запросу заказчика пишется пишется техническое описание, техническая документация</p>
+                        </li>
+                        <li class="projects__block-3--item">
+                            <div>07/05</div>
+                            <p>Сдача проекта</p>
+                        </li>
+                        <li class="projects__block-3--item">
+                            <div>08/05</div>
+                            <p>При необходимости заключается договор на техническое обслуживание</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects__block-4">
+            <div class="container block">
+                <div class="mb-63">
+                    <h3 class="title-h3 mb-28">Хотите предложить сотрудничество или заказать услугу?</h3>
+                    <p class="contacts__text">Заполните форму и наши специалисты свяжутся с вами для обсуждения деталей</p>
+                </div>
+                <div>
+                    <form class="form" action="#">
+                        <input class="form__input" type="text" placeholder="Контактное лицо">
+                        <input class="form__input" type="text" placeholder="Телефон">
+                        <input class="form__input" type="text" placeholder="Email">
+                        <textarea class="form__textarea" placeholder="Описание проекта"></textarea>
+                        <label class="form__checkbox">
+                            <input class="form__input--none" type="checkbox">
+                            <span class="form__checkbox-elem"></span>
+                            <span class="form__checkbox-text">
+                                Нажимая кнопку Отправить, я даю согласие на обработку моих персональных данных и соглашаюсь с <a href="#">Политикой конфиденциальности</a> 
+                            </span>
+                        </label>
+                        <button type="button" class="form__btn btn">
+                            <span>Отправить</span>
+                            <i class="icon-enter"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+
+    <footer class="footer">
+        <div class="footer__wrap">
+            <div class="footer__block">
+                <a class="logo footer__logo" href="#">
+                    <img src="images/svg/logo.svg" alt="лого">
+                </a>
+    
+                <ul class="footer__nav">
+                    <li><a href="about.html">Компания</a></li>
+                    <li><a href="services.html">Услуги</a></li>
+                    <li><a href="projects.html">Проекты</a></li>
+                </ul>
+    
+                <ul class="footer__nav">
+                    <li><a href="calulations.html">Инструменты</a></li>
+                    <li><a href="career.html#">Карьера</a></li>
+                    <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+    
+                <ul class="footer__info">
+                    <li>Информация</li>
+                    <li><a href="agreement.html">Политика конфиденциальности</a></li>
+                    <li><a href="#">Политика использования Cookies</a></li>
+                </ul>
+    
+                <ul class="footer__contact">
+                    <li><a href="mailto:info@sudo.team">info@sudo.team</a></li>
+                </ul>
+            </div>
+            <p class="footer__copyright">© 2022, ООО Судо. Все права сайта защищены</p>
+        </div>
+
+    </footer>
+
+    <script src="js/app.js"></script>
+    <script>
+
+
+    const ProjectsSortBtn = document.querySelectorAll('.projects__sort-btn')
+    const projectsCard = document.querySelectorAll('.projects-card')
+    const projectsCardEng = document.querySelectorAll('.projects-card--eng')
+    const projectsCardSci = document.querySelectorAll('.projects-card--sci')
+    const projectsContainer = document.querySelector('.projects__container')
+    const btnOne = document.querySelector('#btn-one')
+    const btnTwo = document.querySelector('#btn-two')
+    const btnThree = document.querySelector('#btn-three')
+
+  
+
+    btnOne.addEventListener('click', () => {
+        ProjectsSortBtn.forEach(el => el.classList.remove('projects__sort-btn--active'))
+        btnOne.classList.add('projects__sort-btn--active')
+        projectsCard.forEach(el => el.style.display="block")
+        projectsContainer.classList.add('projects__container')
+        projectsContainer.classList.remove('projects__container--test')
+    })
+
+    btnTwo.addEventListener('click', () => {
+        ProjectsSortBtn.forEach(el => el.classList.remove('projects__sort-btn--active'))
+        btnTwo.classList.add('projects__sort-btn--active')
+        projectsCard.forEach(el => el.style.display="none")
+        projectsCardEng.forEach(el => el.style.display="block")
+        projectsContainer.classList.remove('projects__container')
+        projectsContainer.classList.add('projects__container--test')
+        
+    })  
+
+    btnThree.addEventListener('click', () => {
+        ProjectsSortBtn.forEach(el => el.classList.remove('projects__sort-btn--active'))
+        btnThree.classList.add('projects__sort-btn--active')
+        projectsCard.forEach(el => el.style.display="none")
+        projectsCardSci.forEach(el => el.style.display="block")
+        projectsContainer.classList.remove('projects__container')
+        projectsContainer.classList.add('projects__container--test')
+    })
+    </script>
+</body>
+</html>
