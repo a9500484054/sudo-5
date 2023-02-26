@@ -31,10 +31,7 @@ function adopt($text) {
 
 
 $headers = "MIME-Version: 1.0" . PHP_EOL .
-"Content-Type: text/html; charset=utf-8" . PHP_EOL .
-'From: '.adopt($project_name).' <'."hello@umtoken.io".'>' . PHP_EOL .
-'Reply-To: '."hello@unitedmarket.org" . PHP_EOL.
-'Reply-To: '."danilzuev2144@gmail.com" . PHP_EOL;
+"Content-Type: text/html; charset=utf-8" . PHP_EOL;
 
 echo $message;
 try {
