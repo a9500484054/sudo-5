@@ -33,13 +33,12 @@ function adopt($text) {
 $headers = "MIME-Version: 1.0" . PHP_EOL .
 "Content-Type: text/html; charset=utf-8" . PHP_EOL;
 
-echo $message;
 try {
     $result = mail($admin_email, adopt($form_subject), $message, $headers );
 } catch (Exception $e) {
-    header("Location: /error-send-email.html");
+    header("HTTP/1.1 500 Server Error");;
     exit();
 }
-if (!$result) header("Location: /error-send-email.html");
-else header("Location: /success-send-email.html");
+if (!$result) header("HTTP/1.1 500 Server Error");
+else header("HTTP/1.1 200 OK");
 exit();
