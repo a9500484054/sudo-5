@@ -14,7 +14,7 @@ $params = $method === 'POST' ? $_POST : ($method ===  'GET' ? $_GET : []);
 $notAllowedKeys = ["project_name", "admin_email", "form_subject"];
 
 foreach ($params as $key => $value) {
-    if(!isset($value) || $value !== '' || in_array($key, $notAllowedKeys)) continue;
+    if(!isset($value) || $value === '' || in_array($key, $notAllowedKeys)) continue;
     $message .= "
     " . ( ($c = !$c) ? '<tr>':'<tr style="background-color: #f8f8f8;">' ) . "
 	<td style='padding: 10px; border: #e9e9e9 1px solid;'><b>$key</b></td>
