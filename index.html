@@ -12,6 +12,7 @@
         rel="stylesheet">
     <link rel="stylesheet" href="css/um-icon-style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/animate.min.css">
     <link rel="stylesheet" href="main.css">
 
@@ -321,20 +322,20 @@
         </button>
         <h3 class="modal-feedback__title">Хотите предложить сотрудничество или заказать услугу?</h3>
         <p class="modal-feedback__text">Заполните форму и наши специалисты свяжутся с вами для обсуждения деталей</p>
-        <form class="form" action="#">
-            <input class="form__input" type="text" placeholder="Контактное лицо">
-            <input class="form__input" type="text" placeholder="Телефон">
-            <input class="form__input" type="text" placeholder="Email">
-            <textarea class="form__textarea" placeholder="Описание проекта"></textarea>
+
+        <form class="form">
+            <input class="form__input" name="Контактное лицо" type="text" placeholder="Контактное лицо" required>
+            <input class="form__input" name="Телефон" type="tel" placeholder="Телефон" required>
+            <input class="form__input" name="Email" type="email" placeholder="Email" required>
+            <textarea class="form__textarea" name="Описание проекта" placeholder="Описание проекта" required></textarea>
             <label class="form__checkbox">
-                <input class="form__input--none" type="checkbox">
+                <input class="form__input--none" type="checkbox" required>
                 <span class="form__checkbox-elem"></span>
-                <span class="form__checkbox-text">
-                    Нажимая кнопку Отправить, я даю согласие на обработку моих персональных данных и соглашаюсь с <a
-                        href="#">Политикой конфиденциальности</a>
+                <span class="form__checkbox-text text-justify ">
+                    Нажимая кнопку Отправить, я даю согласие на обработку моих персональных данных и соглашаюсь с <a href="agreement.html">Политикой конфиденциальности</a>
                 </span>
             </label>
-            <button type="button" class="form__btn btn">
+            <button type="submit" class="form__btn btn">
                 <span>Отправить</span>
                 <i class="icon-enter"></i>
             </button>
@@ -375,7 +376,7 @@
 
     </footer>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="libs/jquery-3.6.3.min.js"></script>
     <script src="js/jquery.enllax.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="libs/bezier.js"></script>
@@ -423,7 +424,6 @@
         let positionElement = 0
 
         let i = 100 / servicesBlockItem.length
-        console.log(servicesBlockProgess)
         servicesBlockProgess.style.width = i + '%'
 
         servicesBlockNavBtnRight.addEventListener('click', () => {
