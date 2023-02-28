@@ -7,7 +7,7 @@ $c = true;
 
 $project_name = 'sudo.team';
 $admin_email  = 'info@sudo.team';
-$form_subject = 'Cотрудничество';
+$form_subject = 'Сообщение с сайта sudo.team';
 $message = '';
 
 $params = $method === 'POST' ? $_POST : ($method ===  'GET' ? $_GET : []);
