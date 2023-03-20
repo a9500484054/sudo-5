@@ -1,11 +1,15 @@
 document.addEventListener('DOMContentLoaded', () => {
 
     const menuBtn = document.querySelector('.menu-btn')
-    const menuClose = document.querySelector('.menu__close')
+    // const menuClose = document.querySelector('.menu__close')
     const searchBtn = document.querySelector('.search-btn')
     const menu = document.querySelector('.menu')
     const search = document.querySelector('.search')
     const bodyElement = document.body
+
+    const year = new Date().getFullYear();
+    document.querySelector('.footer__copyright').innerText =
+        '© ' + year + ', ООО Судо. Все права сайта защищены';
 
 
 
